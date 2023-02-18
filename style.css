@@ -1,75 +1,66 @@
 body {
-
-    margin: 0px;
-    padding: 0px;
-    background: rgb(167, 167, 167);
+  margin: 0px;
+  padding: 0px;
+  background: rgb(167, 167, 167);
 }
 
-.texturas{
+.texturas {
+  border: 2px solid rgb(3, 59, 21);
+  box-sizing: border-box;
 
-   
-    border: 2px solid rgb(3, 59, 21);
-    box-sizing: border-box;
-
-    background: rgb(157, 213, 229);
-    border-radius: 5px ;
-    -webkit-border-radius: 5px ;
-    -moz-border-radius: 5px ;
-    -ms-border-radius: 5px ;
-    -o-border-radius: 5px ;
-    user-select: none;
+  background: rgb(157, 213, 229);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  user-select: none;
 }
 
 .texturas div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border: 2px solid rgb(3, 59, 21);
+  box-sizing: border-box;
+  user-select: all;
 
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    border: 2px solid rgb(3, 59, 21);
-    box-sizing: border-box;
-    user-select: all;
-   
-
- 
-    border-radius: 5px ;
-    -webkit-border-radius: 5px ;
-    -moz-border-radius: 5px ;
-    -ms-border-radius: 5px ;
-    -o-border-radius: 5px ;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-
-.texturas div:active{
-    opacity: 0.5;
+.texturas div:active {
+  opacity: 0.5;
 }
 
-.textura1{
-    background-image: url("textura1.jpg");
+.textura1 {
+  background-image: url("textura1.jpg");
 }
 
-
-.textura2{
-    background-image: url("textura2.jpg");
+.textura2 {
+  background-image: url("textura2.jpg");
 }
 
-.textura3{
-    background-image: url("textura3.jpg");
+.textura3 {
+  background-image: url("textura3.jpg");
 }
 
-.textura4{
-    background-image: url("textura4.png");
+.textura4 {
+  background-image: url("textura4.png");
 }
 
-
-.zona{
-    background-color: rgba(57, 136, 111, 0.547);
-    margin: 5px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.zona {
+  background-color: rgba(57, 136, 111, 0.547);
+  margin: 5px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }

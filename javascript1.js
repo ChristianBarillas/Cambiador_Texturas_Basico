@@ -1,20 +1,24 @@
-"use strict"
+"use strict";
 const zona = document.querySelector(".zona");
-zona.addEventListener("dragover", (e)=> {
+zona.addEventListener("dragover", (e) => {
+  e.preventDefault();
+});
 
-    e.preventDefault();
-})
+zona.addEventListener("drop", (e) => {
+  let n = e.dataTransfer.getData("textura");
+  zona.style.background = `url("textura${n}.jpg")`;
+});
 
-zona.addEventListener("drop", (e)=>{
-let n = e.dataTransfer.getData("textura")
-zona.style.background = `url("textura${n}.jpg")`;
-})
-
-for (let i = 1; i < document.querySelector(".texturas").children.length + 1; i++){
-document.querySelector(`.textura${i}`).addEventListener("dragstart",(e)=> transferirtextura(i,e))
+for (
+  let i = 1;
+  i < document.querySelector(".texturas").children.length + 1;
+  i++
+) {
+  document
+    .querySelector(`.textura${i}`)
+    .addEventListener("dragstart", (e) => transferirtextura(i, e));
 }
 
-const transferirtextura = (n,e)=>{
-e.dataTransfer.setData("textura", n);
-
-}
+const transferirtextura = (n, e) => {
+  e.dataTransfer.setData("textura", n);
+};
